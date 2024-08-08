@@ -15,7 +15,7 @@ export default function TabLayout() {
         headerShown: false,
       }}>
       <Tabs.Screen
-        name="index"
+        name="(home)"
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
@@ -31,6 +31,15 @@ export default function TabLayout() {
             <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
           ),
         }}
+      />
+      <Tabs.Screen
+      name='(camera)'
+      options={{
+        title: 'Camera',
+        tabBarIcon: ({ color, focused }) => (
+          <TabBarIcon name={focused ? 'camera' : 'camera-outline'} color={color} />
+        )
+      }}
       />
     </Tabs>
   );
